@@ -1,0 +1,65 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  line-height: 1.5;
+}
+a { color: #2563eb; text-decoration: none; }
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.btn-primary { background: #2563eb; color: white; }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-success { background: #059669; color: white; }
+.btn-danger { background: #dc2626; color: white; }
+.btn-outline { background: white; border: 1px solid #cbd5e1; color: #334155; }
+.btn-outline:hover { background: #f1f5f9; }
+input, select, textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.15);
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 0.65rem 0.75rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.table th { background: #f8fafc; font-weight: 600; font-size: 0.85rem; color: #64748b; }
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+.badge-green { background: #d1fae5; color: #065f46; }
+.badge-yellow { background: #fef3c7; color: #92400e; }
+.badge-red { background: #fee2e2; color: #991b1b; }
+.badge-blue { background: #dbeafe; color: #1e40af; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.3rem; font-weight: 500; font-size: 0.9rem; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+.alert { padding: 0.75rem 1rem; border-radius: 6px; margin-bottom: 1rem; }
+.alert-error { background: #fee2e2; color: #991b1b; }
+.alert-success { background: #d1fae5; color: #065f46; }
